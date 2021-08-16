@@ -13,3 +13,6 @@ Coupon validator
 - cd client
 - npm start
 
+## Deploy
+-  https://antstack-coupon-validator.herokuapp.com/
+
