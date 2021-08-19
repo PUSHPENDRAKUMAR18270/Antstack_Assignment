@@ -52,7 +52,7 @@ const ApplyCoupon = () => {
             setCouponStatus(data['couponStatus'])
         })
         .catch((error) => {
-            toast.error(error.message)
+            toast.error('Error occured')
             console.error('Error:', error);
         });
     };
@@ -65,11 +65,9 @@ const ApplyCoupon = () => {
                     <div className="col">
                         <h1>Apply Coupon</h1>
                         <form onSubmit={applyCoupon}>
-
                             <label>Total Amount </label> 
                             <input type = "number" required name="totalAmount" onChange={handleChange}
                             className="form-control"/> 
-
                             <label>Coupon Code </label> 
                             <input type = "text" required name="couponCode" onChange={handleChange}
                              className="form-control"/>
@@ -82,9 +80,9 @@ const ApplyCoupon = () => {
                     <div className="col">
                         <h1>Cart</h1>
                         <div className ="cart">
-                            <h3>Payable Amount: {payableAmount}</h3>
-                            <h3>Discount: {couponType} {discount}</h3>
-                            <h3>Status: {couponStatus}</h3>
+                            <h2>Payable Amount: {payableAmount}</h2>
+                            <h2>Discount: {couponType} {discount}</h2>
+                            <h2>Status: {couponStatus}</h2>
                         </div>
                     </div>}
                 </div>

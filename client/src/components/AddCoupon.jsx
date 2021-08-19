@@ -2,7 +2,7 @@ import {useState,useEffect,React} from 'react';
 import {toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../CSS/AddCoupon.css';
-
+//configur toast 
 toast.configure()
 function AddCoupon(){
     //formData state hook
@@ -50,7 +50,7 @@ function AddCoupon(){
     };
     //render HTML
     return (
-        <div style={{"marginTop":"30px","width":"500px","height":"500px"}} className="container">  
+        <div style={{"width":"80vh"}} className="container">  
             <h1>Add Coupon</h1>
             <form onSubmit={addCoupon}>
                 <div className="form-group">
@@ -78,7 +78,7 @@ function AddCoupon(){
                 </div>
                 <div className="form-group">
                     <label>Expiry Date</label>
-                    <input type="date" id="expiryDate" onChange={handleChange} className="form-control" required name="expiryDate"/>
+                    <input type="datetime-local" id="expiryDate" onChange={handleChange} className="form-control" required name="expiryDate"/>
                 </div>
                 
                 <div className="form-group">
