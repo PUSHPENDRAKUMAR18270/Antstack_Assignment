@@ -7,11 +7,15 @@ Coupon validator
 - Install Node Dependencies
     - Execute command: npm install
 - Run backend server
-    - Execute command: npm start
+    - Execute command: nodemon server/index.js
 
 ## Frontend
-- cd client
-- npm start
+- Move To Client Folder
+    - Execute command: cd client
+- Install Frontend dependencies
+    - Execute command: npm install
+- Run Frontend
+    - Execute command: npm start
 
 ## Deploy
 -  https://antstack-coupon-validator.herokuapp.com/
