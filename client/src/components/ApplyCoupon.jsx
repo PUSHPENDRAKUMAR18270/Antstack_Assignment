@@ -33,6 +33,7 @@ const ApplyCoupon = () => {
     //call backend to apply coupon
     const applyCoupon = (e) => {
         e.preventDefault()
+        toast.success('Applying coupon!! Please wait')
         const applyCouponRequestOptions = {
             method: 'POST',
             body: JSON.stringify(formData),

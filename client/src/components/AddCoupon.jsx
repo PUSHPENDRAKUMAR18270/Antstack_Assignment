@@ -32,6 +32,7 @@ function AddCoupon(){
     //call Backend API to add coupon
     const addCoupon = (e) => {
         e.preventDefault()
+        toast.success('Processing Coupon!!')
         const addCouponRequestOptions = {
             method: 'POST',
             body: JSON.stringify(formData),
@@ -42,10 +43,10 @@ function AddCoupon(){
         };
         fetch('api/add-coupon',addCouponRequestOptions)
         .then(()=> {
-            toast.success('Coupon added successfully')
+            toast.success('Coupon Added!!')
         })
         .catch((error) => {
-            toast.error(error.message)
+            toast.error('error occured please try again')
         });
     };
     //render HTML
