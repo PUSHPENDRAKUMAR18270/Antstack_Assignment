@@ -11,13 +11,13 @@ function App() {
     <Router>
       <div className="App">
       <Nav/>
-      <Switch>
+      {/* <Switch> */}
       <Route path = "/apply-coupon" component = {ApplyCoupon} />
         <Route path = "/" component = {Home} />
         
         <Route path = "/coupons" component = {Coupons} />
         <Route path = "/add-coupon" component = {AddCoupon} />
-      </Switch>
+      {/* </Switch> */}
       </div>
     </Router>  
   );
