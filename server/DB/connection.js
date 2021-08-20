@@ -3,7 +3,8 @@ require('dotenv').config();
 
 /*connects to database schedulerDB */
 module.exports.connection = function () {
-    mongoose.connect(process.env.DEVELOPMENT_MONGODB_URI, {
+    mongoose.connect(process.env.PRODUCTION_MONGODB_URI ||
+      process.env.DEVELOPMENT_MONGODB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
