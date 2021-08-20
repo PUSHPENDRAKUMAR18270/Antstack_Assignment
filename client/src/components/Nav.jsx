@@ -3,7 +3,7 @@ import {React} from 'react'
 function Nav(){
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <button className="navbar-brand" href="#">Coupons</button>
+        <a className="navbar-brand" href="/">Home</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
         </button>
@@ -14,6 +14,9 @@ function Nav(){
             <a className="nav-item nav-link" href="/coupons">Retrieve</a>
             </div>
         </div>
+        <span class="navbar-text">
+            Coupon Validator
+        </span>
         </nav>
     )
 }
