@@ -60,7 +60,7 @@ const ApplyCoupon = () => {
     //render HTML
     return (
         <div>
-            <div className="container">
+            <div className="container overflow-auto">
                 <div className="row" style ={{margin:"40px"}}>
                     <div className="col">
                         <h1>Apply Coupon</h1>

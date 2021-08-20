@@ -16,7 +16,6 @@ function Coupons(){
         fetch('api/retrieve-coupons',retrieveCouponsRequestOptions)
         .then(response => response.json())
         .then(data => {
-            console.log('data',data)
             setCoupons(data);
         })
         .catch((error) => {
@@ -26,7 +25,7 @@ function Coupons(){
     return (
         <div>
             <h1>Coupons</h1>
-            <table className="table table-striped">
+            <table className="table table-striped overflow-auto">
                 <thead>
                     <tr>
                         <th>CouponCode</th>
