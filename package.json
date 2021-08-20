@@ -4,11 +4,11 @@
   "description": "Coupon validator",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
+    "start": "cd server && npm run server.js",
     "build": "cd client && npm run build",
     "install-client":"cd client && npm install",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "npm run install-client && npm run build"
   },
   "repository": {
     "type": "git",
