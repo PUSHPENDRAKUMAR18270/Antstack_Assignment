@@ -45,6 +45,7 @@ const ApplyCoupon = () => {
         fetch('api/apply-coupon',applyCouponRequestOptions)
         .then(response => response.json())
         .then(data => {
+            console.log(data);
             toast.success('coupon applied')
             setPayableAmount(data['payableAmount'])
             setShowCart(true);

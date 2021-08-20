@@ -43,6 +43,7 @@ function AddCoupon(){
         };
         fetch('api/add-coupon',addCouponRequestOptions)
         .then(()=> {
+            console.log(formData)
             toast.success('Coupon Added!!')
         })
         .catch((error) => {
