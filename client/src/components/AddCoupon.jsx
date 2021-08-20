@@ -32,7 +32,7 @@ function AddCoupon(){
     //call Backend API to add coupon
     const addCoupon = (e) => {
         e.preventDefault()
-        toast.success('Processing Coupon!!')
+        toast.success('Processing Coupon. Please wait')
         const addCouponRequestOptions = {
             method: 'POST',
             body: JSON.stringify(formData),
