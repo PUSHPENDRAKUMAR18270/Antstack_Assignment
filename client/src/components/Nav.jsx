@@ -14,7 +14,7 @@ function Nav(){
             <a className="nav-item nav-link" href="/coupons">Retrieve</a>
             </div>
         </div>
-        <span class="navbar-text">
+        <span className="navbar-text">
             Coupon Validator
         </span>
         </nav>
