@@ -4,7 +4,7 @@ require('dotenv').config();
 /*connects to database schedulerDB */
 module.exports.connection = function () {
     mongoose.connect((process.env.PRODUCTION_MONGODB_URI ||
-      process.env.DEVELOPMENT_MONGODB_URI), {
+      "mongodb://localhost:27017/coupon-validator"), {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
