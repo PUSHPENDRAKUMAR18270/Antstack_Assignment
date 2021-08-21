@@ -48,10 +48,13 @@ function applyCoupon(coupons,totalAmount){
         //percentage discount
         let discountPercentage = parseFloat(discount)
         payableAmount -= payableAmount*discountPercentage/100
+        payableAmount = payableAmount.toFixed(2)
     }
     payableAmount = Math.max(0,payableAmount);
-    res['payableAmount']=payableAmount
-    res['couponStatus'] = "you saved Rs "+(totalAmount - payableAmount)
+    res['payableAmount'] = payableAmount
+    let amountSaved = totalAmount - payableAmount
+    amountSaved = amountSaved.toFixed(2)
+    res['couponStatus'] = "you saved Rs "+ amountSaved
     return res;
 }
 module.exports = applyCoupon
